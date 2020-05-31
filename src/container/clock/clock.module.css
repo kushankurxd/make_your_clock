@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clock_body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  background: #ff9998;
+}
+
+.wrapper {
+  width: 14rem;
+  height: 14rem;
+  margin: 4rem auto;
+}
+
+@media (min-width: 40rem) {
+  .wrapper {
+    width: 20rem;
+    height: 20rem;
+  }
+}

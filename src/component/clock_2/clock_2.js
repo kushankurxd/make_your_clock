@@ -2,6 +2,8 @@ import React from "react";
 
 import styles from "./clock_2.module.css";
 
+import { connect } from "react-redux";
+
 const clock_2 = (props) => {
   return (
     <div className={styles.clock}>
@@ -30,4 +32,12 @@ const clock_2 = (props) => {
   );
 };
 
-export default clock_2;
+const mapStateToProps = (state) => {
+  return {
+    secondsDegrees: state.clk.secondsDegrees,
+    minsDegrees: state.clk.minsDegrees,
+    hoursDegrees: state.clk.hoursDegrees,
+  };
+};
+
+export default connect(mapStateToProps)(clock_2);
