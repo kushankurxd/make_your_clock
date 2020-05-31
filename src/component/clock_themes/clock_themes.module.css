@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 20px 20px 0 0;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -10px 16px rgba(73, 73, 73, 0.2);
 }
 
 @media (min-width: 40rem) {
@@ -17,5 +18,12 @@
 .wrapper {
   width: 10rem;
   height: 10rem;
-  padding: 1rem;
+  padding: 1.2rem;
+  font-size: 0.4rem;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+  transform: translateY(-2rem);
+  transition: transform 0.4s ease-out;
 }

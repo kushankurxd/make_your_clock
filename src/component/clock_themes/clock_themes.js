@@ -1,8 +1,6 @@
 import React from "react";
 
 import styles from "./clock_themes.module.css";
-import Clock_1 from "../clock_1/clock_1";
-import Clock_2 from "../clock_2/clock_2";
 
 import { connect } from "react-redux";
 import * as actionTypes from "../../store/action/actionsTypes";

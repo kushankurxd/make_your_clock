@@ -1,0 +1,149 @@
+.clock {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  position: relative;
+  border: 1em solid cornsilk;
+}
+.center {
+  background-color: #000;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  width: 6%;
+  height: 6%;
+  border-radius: 50%;
+  z-index: 20;
+  box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.4);
+}
+.hourHand {
+  width: 3%;
+  height: 24%;
+  background-color: #000;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 26%;
+  left: 49.4%;
+  z-index: 10;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(360deg);
+}
+.minuteHand {
+  width: 2%;
+  height: 36%;
+  background-color: #000;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 15.4%;
+  left: 50%;
+  z-index: 9;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(90deg);
+}
+.secondHand {
+  width: 0.8%;
+  height: 40%;
+  background-color: red;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 10%;
+  left: 50.4%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  z-index: 8;
+  transform: rotate(90deg);
+}
+.time {
+  position: absolute;
+  top: 44%;
+  left: 14%;
+  border: 1px solid #fff8dc;
+  background-color: #fff;
+  padding: 0.2em 0.4em;
+  display: block;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-size: 1.4em;
+}
+.time small {
+  color: red;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock ul {
+  list-style: none;
+  padding: 0;
+}
+.clock ul li {
+  position: absolute;
+  width: 8%;
+  height: 8%;
+  text-align: center;
+  line-height: 100%;
+  font-size: inherit;
+  color: red;
+}
+.clock ul li:nth-child(1) {
+  right: 22%;
+  top: 9%;
+}
+.clock ul li:nth-child(2) {
+  right: 6%;
+  top: 25.4%;
+}
+.clock ul li:nth-child(3) {
+  right: 1%;
+  top: 44%;
+  color: #000;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.clock ul li:nth-child(4) {
+  right: 6%;
+  top: 71%;
+}
+.clock ul li:nth-child(5) {
+  right: 22%;
+  top: 88%;
+}
+.clock ul li:nth-child(6) {
+  right: 45%;
+  bottom: 1%;
+  color: #000;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.clock ul li:nth-child(7) {
+  left: 22%;
+  top: 88%;
+}
+.clock ul li:nth-child(8) {
+  left: 6%;
+  top: 71%;
+}
+.clock ul li:nth-child(9) {
+  left: 1%;
+  top: 44.4%;
+  color: #000;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.clock ul li:nth-child(10) {
+  left: 6%;
+  top: 25.4%;
+}
+.clock ul li:nth-child(11) {
+  left: 22%;
+  top: 9%;
+}
+.clock ul li:nth-child(12) {
+  right: 46%;
+  top: 1%;
+  color: #000;
+  font-size: 1.8em;
+  font-weight: bold;
+}

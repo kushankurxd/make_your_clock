@@ -11,13 +11,16 @@ body {
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  /* background: #d9d7dd; */
   background: #ff9998;
+  /* background: #f8c985; */
 }
 
 .wrapper {
   width: 14rem;
   height: 14rem;
   margin: 4rem auto;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 40rem) {

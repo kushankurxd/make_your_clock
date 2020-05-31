@@ -3,7 +3,7 @@
   height: 100%;
   border-radius: 50%;
   position: relative;
-  padding: 1rem;
+  padding: 1.2em;
   -webkit-box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65);
   -moz-box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65);
   box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65);
@@ -85,13 +85,11 @@
 .inner_clock_face::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
+  top: 47.4%;
+  left: 46.4%;
+  width: 1.2em;
+  height: 1.2em;
   border-radius: 18px;
-  margin-left: -9px;
-  margin-top: -6px;
   background: #4d4b63;
   z-index: 11;
 }
