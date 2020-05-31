@@ -1,5 +1,8 @@
 import React from "react";
 import Clock_1 from "../../component/clock_1/clock_1";
+import Clock_2 from "../../component/clock_2/clock_2";
+
+import "./clock.css";
 
 class Clock extends React.Component {
   state = {
@@ -27,13 +30,13 @@ class Clock extends React.Component {
     });
   };
 
-  componentDidMount(){
-    this.timer = setInterval(()=>this.setDate(), 1000);
+  componentDidMount() {
+    this.timer = setInterval(() => this.setDate(), 1000);
     this.setDate();
   }
 
-  componentWillUnmount(){
-      clearInterval(this.timer);
+  componentWillUnmount() {
+    clearInterval(this.timer);
   }
 
   render() {
@@ -44,6 +47,11 @@ class Clock extends React.Component {
           minsDegrees={this.state.minsDegrees}
           hoursDegrees={this.state.hoursDegrees}
         />
+        {/* <Clock_2
+          secondsDegrees={this.state.secondsDegrees}
+          minsDegrees={this.state.minsDegrees}
+          hoursDegrees={this.state.hoursDegrees}
+        /> */}
       </div>
     );
   }

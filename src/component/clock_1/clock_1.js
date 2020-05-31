@@ -1,28 +1,28 @@
 import React from "react";
 
-import styles from "./clock_1.css";
+import styles from "./clock_1.module.css";
 
 const clock_1 = (props) => {
   return (
-    <div className="clock">
-      <div className="outer-clock-face">
-        <div className="marking marking-one"></div>
-        <div className="marking marking-two"></div>
-        <div className="marking marking-three"></div>
-        <div className="marking marking-four"></div>
-        <div className="inner-clock-face">
+    <div className={styles.clock}>
+      <div className={styles.outer_clock_face}>
+        <div className={[styles.marking, styles.marking_one].join(" ")}></div>
+        <div className={[styles.marking, styles.marking_two].join(" ")}></div>
+        <div className={[styles.marking, styles.marking_three].join(" ")}></div>
+        <div className={[styles.marking, styles.marking_four].join(" ")}></div>
+        <div className={styles.inner_clock_face}>
           <div
-            className="hand hour-hand"
+            className={[styles.hand, styles.hour_hand].join(" ")}
             style={{
               transform: "rotate(" + (props.hoursDegrees + 90) + "deg)",
             }}
           ></div>
           <div
-            className="hand min-hand"
+            className={[styles.hand, styles.min_hand].join(" ")}
             style={{ transform: "rotate(" + (props.minsDegrees + 90) + "deg)" }}
           ></div>
           <div
-            className="hand second-hand"
+            className={[styles.hand, styles.second_hand].join(" ")}
             style={{
               transform: "rotate(" + (props.secondsDegrees + 90) + "deg)",
             }}
