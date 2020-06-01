@@ -4,8 +4,6 @@
   border-radius: 50%;
   position: relative;
   padding: 1.2em;
-  -webkit-box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65);
-  -moz-box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65);
   box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65);
   background: #545271;
 }
@@ -16,15 +14,11 @@
   height: 100%;
   border-radius: 100%;
   background: #fefefc;
-  -webkit-box-shadow: 0 20px 10px rgba(62, 47, 63, 0.45);
-  -moz-box-shadow: 0 20px 10px rgba(62, 47, 63, 0.45);
   box-shadow: 0 20px 10px rgba(62, 47, 63, 0.45);
   overflow: hidden;
 }
 
 .outer_clock_face::after {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -46,26 +40,18 @@
 }
 
 .outer_clock_face .marking.marking_one {
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
   transform: rotate(30deg);
 }
 
 .outer_clock_face .marking.marking_two {
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
   transform: rotate(60deg);
 }
 
 .outer_clock_face .marking.marking_three {
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
   transform: rotate(120deg);
 }
 
 .outer_clock_face .marking.marking_four {
-  -webkit-transform: rotate(150deg);
-  -moz-transform: rotate(150deg);
   transform: rotate(150deg);
 }
 
@@ -76,8 +62,6 @@
   width: 80%;
   height: 80%;
   background: #fefefc;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   z-index: 1;
 }

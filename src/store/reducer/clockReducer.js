@@ -3,9 +3,10 @@ import * as actionTypes from "../action/actionsTypes";
 import Clock_1 from "../../component/clock_1/clock_1";
 import Clock_2 from "../../component/clock_2/clock_2";
 import Clock_3 from "../../component/clock_3/clock_3";
+import Clock_4 from "../../component/clock_4/clock_4";
 
 const initialState = {
-  clocks: [<Clock_1 />, <Clock_2 />, <Clock_3 />],
+  clocks: [<Clock_1 />, <Clock_2 />, <Clock_3 />, <Clock_4/>],
   selected: 0,
   secondsDegrees: 0.0,
   minsDegrees: 0.0,
