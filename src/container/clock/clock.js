@@ -21,7 +21,7 @@ class Clock extends React.Component {
     return (
       <div className={styles.clock_body}>
         <div className={styles.wrapper}>
-          {this.props.clocks[this.props.selected]}
+          {this.props.clocks[this.props.selected].body}
         </div>
         <Clock_themes />
       </div>

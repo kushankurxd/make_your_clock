@@ -24,4 +24,5 @@
 .hand.second_hand {
   background: #ff5e5e;
   width: 40%;
+  z-index: 2;
 }

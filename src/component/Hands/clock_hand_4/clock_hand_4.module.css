@@ -5,6 +5,7 @@
   border-radius: 50rem;
   background: #685d52;
   filter: blur(0.4px);
+  z-index: 10;
 }
 
 .hour {
@@ -34,6 +35,7 @@
     inset -0.4rem -0.8rem 1rem rgba(75, 68, 60, 0.6),
     0.2rem 0.2rem 0.2rem rgba(75, 68, 60, 0.8);
   filter: blur(0.4px);
+  z-index: 20;
 }
 .cover:before {
   content: "";
@@ -56,6 +58,7 @@
   background: #c15c48;
   box-shadow: 0.1rem 0.15rem 0.2rem #463e37;
   filter: blur(0.6px);
+  z-index: 21;
 }
 
 .second {
@@ -68,4 +71,5 @@
   left: 49.4%;
   border-radius: 0.2rem;
   box-shadow: 1rem -0.5rem 0.7rem rgba(104, 93, 82, 0.4);
+  z-index: 22;
 }

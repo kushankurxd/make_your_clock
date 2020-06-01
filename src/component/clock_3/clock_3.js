@@ -3,12 +3,11 @@ import React from "react";
 import styles from "./clock_3.module.css";
 
 import { connect } from "react-redux";
-import Clock_hand_3 from "../Hands/clock_hand_3/clock_hand_3";
 
 const clock_3 = (props) => {
   return (
     <div className={styles.clock}>
-      <Clock_hand_3 />
+      {props.hand}
       <div className={styles.time}>
         <span>
           {" "}
@@ -60,9 +59,7 @@ const clock_3 = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    secondsDegrees: state.clk.secondsDegrees,
-    minsDegrees: state.clk.minsDegrees,
-    hoursDegrees: state.clk.hoursDegrees,
+    hand: state.clk.clocks[2].hand,
     hours: state.clk.hours,
     mins: state.clk.mins,
     seconds: state.clk.seconds,

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./clock_1.module.css";
 
-import Clock_hand_1 from "../Hands/clock_hand_1/clock_hand_1";
+import { connect } from "react-redux";
 
 const clock_1 = (props) => {
   return (
@@ -12,12 +12,16 @@ const clock_1 = (props) => {
         <div className={[styles.marking, styles.marking_two].join(" ")}></div>
         <div className={[styles.marking, styles.marking_three].join(" ")}></div>
         <div className={[styles.marking, styles.marking_four].join(" ")}></div>
-        <div className={styles.inner_clock_face}>
-          <Clock_hand_1 />
-        </div>
+        <div className={styles.inner_clock_face}>{props.hand}</div>
       </div>
     </div>
   );
 };
 
-export default clock_1;
+const mapStateToProps = (state) => {
+  return {
+    hand: state.clk.clocks[0].hand,
+  };
+};
+
+export default connect(mapStateToProps)(clock_1);

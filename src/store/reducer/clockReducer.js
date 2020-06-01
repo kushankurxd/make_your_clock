@@ -4,11 +4,22 @@ import Clock_1 from "../../component/clock_1/clock_1";
 import Clock_2 from "../../component/clock_2/clock_2";
 import Clock_3 from "../../component/clock_3/clock_3";
 import Clock_4 from "../../component/clock_4/clock_4";
+import Clock_hand_1 from "../../component/Hands/clock_hand_1/clock_hand_1";
+import Clock_hand_2 from "../../component/Hands/clock_hand_2/clock_hand_2";
+import Clock_hand_3 from "../../component/Hands/clock_hand_3/clock_hand_3";
+import Clock_hand_4 from "../../component/Hands/clock_hand_4/clock_hand_4";
 
 const initialState = {
-  clocks: [<Clock_1 />, <Clock_2 />, <Clock_3 />, <Clock_4/>],
-  
+  clocks: [
+    { body: <Clock_1 />, hand: <Clock_hand_1 /> },
+    { body: <Clock_2 />, hand: <Clock_hand_2 /> },
+    { body: <Clock_3 />, hand: <Clock_hand_3 /> },
+    { body: <Clock_4 />, hand: <Clock_hand_4 /> },
+  ],
+
   selected: 0,
+  edit: false,
+
   secondsDegrees: 0.0,
   minsDegrees: 0.0,
   hoursDegrees: 0.0,
@@ -50,6 +61,41 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         selected: action.selected,
+      };
+    case actionTypes.EDIT_CLOCK:
+      return {
+        ...state,
+        edit: action.edit,
+      };
+    case actionTypes.CHANGE_HAND:
+      let hand = null;
+      switch (action.selected) {
+        case 0:
+          hand = <Clock_hand_1 />;
+          break;
+        case 1:
+          hand = <Clock_hand_2 />;
+          break;
+        case 2:
+          hand = <Clock_hand_3 />;
+          break;
+        case 3:
+          hand = <Clock_hand_4 />;
+          break;
+        default:
+          break;
+      }
+      let clocks = [];
+      for (let i in state.clocks) {
+        if (i == state.selected) {
+          clocks.push({ body: state.clocks[i].body, hand: hand });
+        } else {
+          clocks.push(state.clocks[i]);
+        }
+      }
+      return {
+        ...state,
+        clocks: clocks,
       };
     default:
       return state;

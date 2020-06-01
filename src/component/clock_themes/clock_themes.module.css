@@ -22,7 +22,7 @@
 }
 
 
-.clocks {
+.list {
   background: rgba(231, 224, 224, 0.2);
   display: flex;
   flex-direction: row;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: 40rem) {
-  .clocks {
+  .list {
     align-self: center;
   }
 }
@@ -44,6 +44,8 @@
   height: 10rem;
   padding: 1.2rem;
   font-size: 0.4rem;
+
+  transform: scale(0.9);
 }
 
 .wrapper:hover {
