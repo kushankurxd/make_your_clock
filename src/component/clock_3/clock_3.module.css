@@ -6,53 +6,6 @@
   position: relative;
   border: 1em solid cornsilk;
 }
-.center {
-  background-color: #000;
-  position: absolute;
-  left: 48%;
-  top: 48%;
-  width: 6%;
-  height: 6%;
-  border-radius: 50%;
-  z-index: 20;
-  box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.4);
-}
-.hourHand {
-  width: 3%;
-  height: 24%;
-  background-color: #000;
-  transform-origin: bottom center;
-  border-radius: 4px;
-  position: absolute;
-  top: 26.4%;
-  left: 49.4%;
-  z-index: 10;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-.minuteHand {
-  width: 2%;
-  height: 36%;
-  background-color: #000;
-  transform-origin: bottom center;
-  border-radius: 4px;
-  position: absolute;
-  top: 15.4%;
-  left: 50%;
-  z-index: 9;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-.secondHand {
-  width: 0.8%;
-  height: 40%;
-  background-color: red;
-  transform-origin: bottom center;
-  border-radius: 4px;
-  position: absolute;
-  top: 10%;
-  left: 50.4%;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-  z-index: 8;
-}
 .time {
   position: absolute;
   top: 44%;

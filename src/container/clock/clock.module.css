@@ -9,11 +9,11 @@ body {
 .clock_body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
   background: #d9d7dd;
   /* background: #ff9998; */
-  /* background: #f8c985; */
+  background: #f8c985;
 }
 
 .wrapper {
@@ -27,5 +27,6 @@ body {
   .wrapper {
     width: 20rem;
     height: 20rem;
+    margin: 2rem auto;
   }
 }

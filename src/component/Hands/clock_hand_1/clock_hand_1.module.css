@@ -1,0 +1,27 @@
+.hand {
+  width: 50%;
+  right: 50%;
+  height: 6px;
+  background: #61afff;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour_hand {
+  width: 20%;
+  z-index: 3;
+}
+
+.hand.min_hand {
+  height: 3px;
+  z-index: 10;
+  width: 35%;
+}
+
+.hand.second_hand {
+  background: #ff5e5e;
+  width: 40%;
+}

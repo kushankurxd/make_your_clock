@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./clock_1.module.css";
 
-import { connect } from "react-redux";
+import Clock_hand_1 from "../Hands/clock_hand_1/clock_hand_1";
 
 const clock_1 = (props) => {
   return (
@@ -13,36 +13,11 @@ const clock_1 = (props) => {
         <div className={[styles.marking, styles.marking_three].join(" ")}></div>
         <div className={[styles.marking, styles.marking_four].join(" ")}></div>
         <div className={styles.inner_clock_face}>
-          <div
-            className={[styles.hand, styles.hour_hand].join(" ")}
-            style={{
-              transform: "rotate(" + (props.hoursDegrees + 90) + "deg)",
-            }}
-          ></div>
-          <div
-            className={[styles.hand, styles.min_hand].join(" ")}
-            style={{
-              transform: "rotate(" + (props.minsDegrees + 90) + "deg)",
-            }}
-          ></div>
-          <div
-            className={[styles.hand, styles.second_hand].join(" ")}
-            style={{
-              transform: "rotate(" + (props.secondsDegrees + 90) + "deg)",
-            }}
-          ></div>
+          <Clock_hand_1 />
         </div>
       </div>
     </div>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    secondsDegrees: state.clk.secondsDegrees,
-    minsDegrees: state.clk.minsDegrees,
-    hoursDegrees: state.clk.hoursDegrees,
-  };
-};
-
-export default connect(mapStateToProps)(clock_1);
+export default clock_1;

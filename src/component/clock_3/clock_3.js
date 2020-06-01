@@ -3,29 +3,12 @@ import React from "react";
 import styles from "./clock_3.module.css";
 
 import { connect } from "react-redux";
+import Clock_hand_3 from "../Hands/clock_hand_3/clock_hand_3";
 
 const clock_3 = (props) => {
   return (
     <div className={styles.clock}>
-      <div
-        className={styles.hourHand}
-        style={{
-          transform: "rotate(" + (props.hoursDegrees + 0) + "deg)",
-        }}
-      ></div>
-      <div
-        className={styles.minuteHand}
-        style={{
-          transform: "rotate(" + (props.minsDegrees + 0) + "deg)",
-        }}
-      ></div>
-      <div
-        className={styles.secondHand}
-        style={{
-          transform: "rotate(" + (props.secondsDegrees + 0) + "deg)",
-        }}
-      ></div>
-      <div className={styles.center}></div>
+      <Clock_hand_3 />
       <div className={styles.time}>
         <span>
           {" "}

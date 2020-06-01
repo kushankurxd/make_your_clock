@@ -1,0 +1,55 @@
+.minute,
+.hour {
+  position: absolute;
+  height: 30%;
+  width: 6px;
+  margin: auto;
+  top: -30%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.minute {
+  position: absolute;
+  height: 40%;
+  width: 4px;
+  top: -39%;
+  left: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.second {
+  position: absolute;
+  height: 26%;
+  width: 2px;
+  margin: auto;
+  top: -25%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  background: #ff4b3e;
+  transform-origin: bottom center;
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}

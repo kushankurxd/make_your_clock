@@ -7,6 +7,7 @@ import Clock_4 from "../../component/clock_4/clock_4";
 
 const initialState = {
   clocks: [<Clock_1 />, <Clock_2 />, <Clock_3 />, <Clock_4/>],
+  
   selected: 0,
   secondsDegrees: 0.0,
   minsDegrees: 0.0,

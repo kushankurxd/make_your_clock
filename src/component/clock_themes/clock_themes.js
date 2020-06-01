@@ -8,15 +8,22 @@ import * as actionTypes from "../../store/action/actionsTypes";
 const clock_themes = (props) => {
   return (
     <div className={styles.main}>
-      {props.clocks.map((clock, index) => (
-        <div
-          key={index}
-          className={styles.wrapper}
-          onClick={() => props.changeTheme(index)}
-        >
-          {clock}
-        </div>
-      ))}
+      <ul className={styles.options}>
+        <li>All</li>
+        <li>Body</li>
+        <li>Hands</li>
+      </ul>
+      <div className={styles.clocks}>
+        {props.clocks.map((clock, index) => (
+          <div
+            key={index}
+            className={styles.wrapper}
+            onClick={() => props.changeTheme(index)}
+          >
+            {clock}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
