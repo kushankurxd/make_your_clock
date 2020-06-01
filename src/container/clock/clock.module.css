@@ -11,8 +11,8 @@ body {
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  /* background: #d9d7dd; */
-  background: #ff9998;
+  background: #d9d7dd;
+  /* background: #ff9998; */
   /* background: #f8c985; */
 }
 

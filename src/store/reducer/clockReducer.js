@@ -21,7 +21,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.INIT_CLOCK:
       return {
         ...state,
-        selected: 2,
+        selected: 1,
       };
     case actionTypes.TICK_TOK:
       const now = new Date();

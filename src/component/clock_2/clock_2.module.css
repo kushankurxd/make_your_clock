@@ -28,7 +28,6 @@
   right: 0;
   background: black;
   transform-origin: bottom center;
-  transform: rotate(90deg);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
@@ -40,7 +39,6 @@
   top: -39%;
   left: 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-  transform: rotate(90deg);
 }
 
 .second {
@@ -55,7 +53,6 @@
   border-radius: 4px;
   background: #ff4b3e;
   transform-origin: bottom center;
-  transform: rotate(180deg);
   z-index: 1;
 }
 
