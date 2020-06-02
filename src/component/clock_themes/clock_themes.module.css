@@ -5,22 +5,24 @@
   align-items: center;
 }
 
-.options{
-  list-style: none;
-  display: flex;
-  margin: 1.2rem 0;
-}
-.options li{
-  margin: 0 1rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+.fab {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 255, 242, 0.445);
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 1.4rem;
 }
 
-.options li:hover{
+.fab:hover {
+  box-shadow: 0 6px 14px 0 rgba(178, 178, 178, 0.4);
+  transform: scale(1.05);
   cursor: pointer;
-  color: rgb(216, 88, 88);
 }
-
 
 .list {
   background: rgba(231, 224, 224, 0.2);

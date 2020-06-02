@@ -11,9 +11,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  background: #d9d7dd;
-  /* background: #ff9998; */
-  background: #f8c985;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+  ),url("../../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 50% top 100%;
+  
 }
 
 .wrapper {
@@ -30,3 +36,5 @@ body {
     margin: 2rem auto;
   }
 }
+
+

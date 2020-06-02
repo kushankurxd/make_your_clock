@@ -5,6 +5,7 @@
   background-color: antiquewhite;
   position: relative;
   border: 1em solid cornsilk;
+  box-shadow: 0 20px 30px rgba(178, 178, 178, 0.4);
 }
 .time {
   position: absolute;

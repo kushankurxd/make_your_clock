@@ -5,7 +5,8 @@
   background: #ffffff;
   font-family: "Montserrat";
   border: 5px solid white;
-  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1),
+  0 20px 30px rgba(178, 178, 178, 0.4);
 }
 
 .wrap {

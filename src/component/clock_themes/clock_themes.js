@@ -21,13 +21,14 @@ const clock_themes = (props) => {
     </div>
   ));
 
+  let icon = (
+    <div className={styles.fab} onClick={() => props.editClock(true)}>
+      &#10084;
+    </div>
+  );
+
   if (props.edit) {
-    list = [
-      <Clock_hand_1 />,
-      <Clock_hand_2 />,
-      <Clock_hand_3 />,
-      <Clock_hand_4 />,
-    ].map((hand, index) => (
+    list = props.hands.map((hand, index) => (
       <div
         key={index}
         className={styles.wrapper}
@@ -36,14 +37,17 @@ const clock_themes = (props) => {
         {hand}
       </div>
     ));
+
+    icon = (
+      <div className={styles.fab} onClick={() => props.editClock(false)}>
+        &#10007;
+      </div>
+    );
   }
 
   return (
     <div className={styles.main}>
-      <ul className={styles.options}>
-        <li onClick={() => props.editClock(false)}>All</li>
-        <li onClick={() => props.editClock(true)}>Edit</li>
-      </ul>
+      {icon}
       <div className={styles.list}>{list}</div>
     </div>
   );
@@ -52,6 +56,7 @@ const clock_themes = (props) => {
 const mapStateToProps = (state) => {
   return {
     clocks: state.clk.clocks,
+    hands: state.clk.hands,
     edit: state.clk.edit,
   };
 };

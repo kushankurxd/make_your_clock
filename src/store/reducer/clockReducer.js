@@ -16,6 +16,12 @@ const initialState = {
     { body: <Clock_3 />, hand: <Clock_hand_3 /> },
     { body: <Clock_4 />, hand: <Clock_hand_4 /> },
   ],
+  hands: [
+    <Clock_hand_1 />,
+    <Clock_hand_2 />,
+    <Clock_hand_3 />,
+    <Clock_hand_4 />,
+  ],
 
   selected: 0,
   edit: false,
