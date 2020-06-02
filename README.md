@@ -1,3 +1,14 @@
+## CLOCK ER
+
+A customizing clock making application using [React.js](https://reactjs.org/) and [Redux](https://redux.js.org/) with responsive design supported. Thanks to [CSS CLocks](https://freefrontend.com/css-clocks/) for providing awsome clock styles.
+
+### Watch [Demo](https://clock-er.netlify.app/) here.
+
+#### Screenshots
+![ezgif com-crop](https://user-images.githubusercontent.com/37204706/83544507-9d4d2480-a51b-11ea-88b1-a596a76838e3.gif)
+![Annotation 2020-06-02 220254](https://user-images.githubusercontent.com/37204706/83546044-b7880200-a51d-11ea-8809-bd01ef3f485a.jpg)
+![Annotation 2020-06-02 221105](https://user-images.githubusercontent.com/37204706/83546231-ff0e8e00-a51d-11ea-8af4-37984bcbeece.jpg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
